@@ -3,17 +3,17 @@ pragma solidity ^0.5.11;
 import "openzeppelin-solidity/contracts/ownership/Ownable.sol";
 import "openzeppelin-solidity/contracts/utils/ReentrancyGuard.sol";
 import "./IFactory.sol";
-import "./MyCollectible.sol";
+import "./StickerCard.sol";
 import "./Strings.sol";
 
 // WIP
-contract MyFactory is IFactory, Ownable, ReentrancyGuard {
+contract StickerCardFactory is IFactory, Ownable, ReentrancyGuard {
   using Strings for string;
   using SafeMath for uint256;
 
   address public proxyRegistryAddress;
   address public nftAddress;
-  string constant internal baseMetadataURI = "https://opensea-creatures-api.herokuapp.com/api/";
+  string constant internal baseMetadataURI = "https://gateway.pinata.cloud/ipfs/QmWAdCjZf7itTzmTGuqvdWcAUK27YVe5tYt2KJhUfnLVHd/";
   uint256 constant UINT256_MAX = ~uint256(0);
 
   /**
@@ -43,11 +43,11 @@ contract MyFactory is IFactory, Ownable, ReentrancyGuard {
   /////
 
   function name() external view returns (string memory) {
-    return "My Collectible Pre-Sale";
+    return "StickerCard Pre-Sale";
   }
 
   function symbol() external view returns (string memory) {
-    return "MCP";
+    return "STCKRCRD";
   }
 
   function supportsFactoryInterface() external view returns (bool) {
@@ -89,7 +89,7 @@ contract MyFactory is IFactory, Ownable, ReentrancyGuard {
   ) internal {
     require(_canMint(msg.sender, _option, _amount), "MyFactory#_mint: CANNOT_MINT_MORE");
     uint256 optionId = uint256(_option);
-    MyCollectible nftContract = MyCollectible(nftAddress);
+    StickerCard nftContract = StickerCard(nftAddress);
     uint256 id = optionToTokenID[optionId];
     if (id == 0) {
       id = nftContract.create(_toAddress, _amount, "", _data);
@@ -118,7 +118,7 @@ contract MyFactory is IFactory, Ownable, ReentrancyGuard {
       return SUPPLY_PER_TOKEN_ID;
     }
 
-    MyCollectible nftContract = MyCollectible(nftAddress);
+    StickerCard nftContract = StickerCard(nftAddress);
     uint256 currentSupply = nftContract.totalSupply(id);
     return SUPPLY_PER_TOKEN_ID.sub(currentSupply);
   }

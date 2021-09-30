@@ -2,7 +2,7 @@ pragma solidity ^0.5.11;
 
 import "multi-token-standard/contracts/interfaces/IERC1155TokenReceiver.sol";
 
-import "../MyFactory.sol";
+import "../StickerCardFactory.sol";
 
 
 contract TestForReentrancyAttack is IERC1155TokenReceiver {
@@ -50,7 +50,7 @@ contract TestForReentrancyAttack is IERC1155TokenReceiver {
         if(balance < totalToMint)
         {
             // 1 is the factory lootbox option, not the token id
-            MyFactory(factoryAddress).mint(1, address(this), 1, "");
+            StickerCardFactory(factoryAddress).mint(1, address(this), 1, "");
         }
         return ERC1155_RECEIVED_SIG;
     }
