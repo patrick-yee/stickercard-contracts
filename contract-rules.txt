@@ -1,0 +1,20 @@
+Pricing
+----------
+*  first 2K are free
+--*  resale royalty of 0.01 across all of them
+
+Transfers
+--------------
+--*  okay for index #0 (card) if there are no other stickers
+--*  not okay for any other stickers
+
+Minting
+-----------
+*  multiples mints allowed for index 0
+*  only 1 for any other index
+
+List of tasks
+-----------------
+
+1.  Make sure transfers are locked down once a sticker is added, but not before
+2.  Make sure that there is a "whitelist" for NFTs that can be added
