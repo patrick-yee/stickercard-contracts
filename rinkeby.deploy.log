@@ -1,0 +1,137 @@
+patrickyee@Patricks-MacBook-Pro opensea-erc1155 % yarn truffle migrate --network rinkeby
+yarn run v1.22.5
+warning ../../../package.json: No license field
+$ /Users/patrickyee/Documents/GitHub/opensea-erc1155/node_modules/.bin/truffle migrate --network rinkeby
+
+Compiling your contracts...
+===========================
+> Everything is up to date, there is nothing to compile.
+
+
+
+Migrations dry-run (simulation)
+===============================
+> Network name:    'rinkeby-fork'
+> Network id:      4
+> Block gas limit: 0x1c9c310
+
+
+1_initial_migration.js
+======================
+Using network: rinkeby-fork
+Using accounts [
+  '0xEb20638d202E15a9aDEfc0bB1A953AF01B3AFf68',
+  '0x777967e9B3b21D7F51186E11Cf6fd8e729D675FA',
+  '0x37DE12021d56d15091B34d35CfC2a670A37DE21A',
+  '0xE55BC9C57a410300590c6ba8b165fF401EC90c31',
+  '0x479465f8373Fe0F7477a78F69487421F4BBD6626',
+  '0x13482c7039df3332d8a5E7280eD1A5Af161e0373',
+  '0x701d72B0825255988f5f2a49a9C23097612d8B8F',
+  '0x7430f43b15adb738a0C9f5aE096a5346d4BE8ee2',
+  '0xD26F08f9aE53B6C632653E4202541B71fB8cC0c5',
+  '0x896943dE3B00Ad6E59D86C1B9682050C3Aa69C78'
+]
+
+   Deploying 'Migrations'
+   ----------------------
+   > block number:        9447862
+   > block timestamp:     1633977355
+   > account:             0xcf3e5878e3e0b9d127Cd5fA3f86F48c5D03Cf689
+   > balance:             18.749579526
+   > gas used:            210237
+   > gas price:           2 gwei
+   > value sent:          0 ETH
+   > total cost:          0.000420474 ETH
+
+   -------------------------------------
+   > Total cost:         0.000420474 ETH
+
+
+2_deploy_contracts.js
+=====================
+
+   Deploying 'StickerCard'
+   -----------------------
+   > block number:        9447864
+   > block timestamp:     1633977424
+   > account:             0xcf3e5878e3e0b9d127Cd5fA3f86F48c5D03Cf689
+   > balance:             18.742703342
+   > gas used:            3410729
+   > gas price:           2 gwei
+   > value sent:          0 ETH
+   > total cost:          0.006821458 ETH
+
+   -------------------------------------
+   > Total cost:         0.006821458 ETH
+
+
+Summary
+=======
+> Total deployments:   2
+> Final cost:          0.007241932 ETH
+
+
+
+
+
+Starting migrations...
+======================
+> Network name:    'rinkeby'
+> Network id:      4
+> Block gas limit: 0x1c950bd
+
+
+1_initial_migration.js
+======================
+Using network: rinkeby
+Using accounts [ '0xcf3e5878e3e0b9d127Cd5fA3f86F48c5D03Cf689' ]
+
+   Deploying 'Migrations'
+   ----------------------
+   > transaction hash:    0x89fb8faeea8ae3318fe677483c1c7aa5cc6894f4310efcefbe924fb91d4f5c09
+   > Blocks: 0            Seconds: 9
+   > contract address:    0x34afd434730aE47Ac9b6e569F3ED7A64aa2a63bb
+   > block number:        9447883
+   > block timestamp:     1633977491
+   > account:             0xcf3e5878e3e0b9d127Cd5fA3f86F48c5D03Cf689
+   > balance:             18.74546926
+   > gas used:            226537
+   > gas price:           20 gwei
+   > value sent:          0 ETH
+   > total cost:          0.00453074 ETH
+
+
+   > Saving migration to chain.
+   > Saving artifacts
+   -------------------------------------
+   > Total cost:          0.00453074 ETH
+
+
+2_deploy_contracts.js
+=====================
+
+   Deploying 'StickerCard'
+   -----------------------
+   > transaction hash:    0xbe8267967571a0fb6193512fd4898bd3c95f64884b4c2868766ec580ec840889
+   > Blocks: 0            Seconds: 4
+   > contract address:    0xFAFd765A977b6839B37F89d2460A6E1D7aeD87a3
+   > block number:        9447885
+   > block timestamp:     1633977521
+   > account:             0xcf3e5878e3e0b9d127Cd5fA3f86F48c5D03Cf689
+   > balance:             18.67365566
+   > gas used:            3544917
+   > gas price:           20 gwei
+   > value sent:          0 ETH
+   > total cost:          0.07089834 ETH
+
+
+   > Saving migration to chain.
+   > Saving artifacts
+   -------------------------------------
+   > Total cost:          0.07089834 ETH
+
+
+Summary
+=======
+> Total deployments:   2
+> Final cost:          0.07542908 ETH
