@@ -1,5 +1,6 @@
 ## OpenSea ERC-1155 Starter Contracts
 
+- [Remaining Items](#remaining-items)
 - [About these contracts](#about-these-contracts)
   - [Configuring the Lootbox](#configuring-the-lootbox)
   - [Why are some standard methods overridden?](#why-are-some-standard-methods-overridden)
@@ -17,7 +18,21 @@
 - [License](#license)
     - [ERC1155 Implementation](#erc1155-implementation)
 
+# Remaining items
+Here is the list of the steps to complete these contracts as understood currently:
+* Complete testing on Rinkeby for the following:
+** Deploy Factory contract for use in pre-sale and white-listed sales (see "gas free" below)
+** Minting stickercards
+** Pre-Sale of the first 2K cards for free with 5% royalties (or whatever pricing scheme is decided on)
+** Testing with the DApp
+* Deployment to mainnet (per loose instructions below)
+* Set pricing in OpenSea
+
+All assets currently used by contracts (including metadata and images for both the card and stickers) are deployed in IPFS via Pinata.  Account credentials for this account have been sent to Matei.
+
 # About these contracts
+
+This project was forked from the OpenSea ERC1155 reference project from their "tutorial" which is described below.  This is the master [template](https://github.com/ProjectOpenSea/opensea-erc1155)
 
 This is a sample ERC-1155 contract for the purposes of demonstrating integration with the [OpenSea](https://opensea.io) marketplace for crypto collectibles. We also include:
 - A script for minting items.
