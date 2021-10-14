@@ -30,6 +30,8 @@ Here is the list of the steps to complete these contracts as understood currentl
 
 All assets currently used by contracts (including metadata and images for both the card and stickers) are deployed in IPFS via Pinata.  Account credentials for this account have been sent to Matei.
 
+The INFURA API key needed to access the blockchain has been transferred to Matei, as well.
+
 # About these contracts
 
 This project was forked from the OpenSea ERC1155 reference project from their "tutorial" which is described below.  This is the master [template](https://github.com/ProjectOpenSea/opensea-erc1155)
