@@ -1,0 +1,10 @@
+{
+    "name" : "StickerCard",
+    "description" : "Verifications of on-chain data that build credibility and community",
+    "image" : "https://gateway.pinata.cloud/ipfs/QmWcLLQDq8smf7Qe6mZ69yGyrEnhG1cgKKsMG2FXpMSDU9/StickerCard.400x400.png",
+    "properties" : {
+        "visible" : "true",
+        "hires_version" : "https://gateway.pinata.cloud/ipfs/QmWcLLQDq8smf7Qe6mZ69yGyrEnhG1cgKKsMG2FXpMSDU9/StickerCard.hires.png"
+    }
+    
+}
